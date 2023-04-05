@@ -5,9 +5,69 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(47,183,193);
+  background: linear-gradient(217deg, rgba(47,183,193,1) 17%, rgba(47,183,193,1) 77%, rgba(47,183,193,1) 100%);
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.allChords {
+  display: flex;
+  flex-direction:row;
+  gap: 10px;  
+}
+.minorChords {
+  display: flex;
+  flex-direction: column; 
+  flex: 1;  
+}
+.majorChords {
+  display: flex;
+  justify-content:center;
+  flex-direction: column;  
+  flex: 1; 
+}
+div button {
+  background: rgb(203,156,205);
+  background: linear-gradient(217deg, rgba(203,156,205,1) 11%, rgba(177,176,64,1) 61%, rgba(214,212,54,1) 97%);
+  font-size: 30px;
+  width: 80px;
+  height: 40px;
+  border-radius: 25px;
+  border: 10px;
+}
+button:hover {
+  box-shadow: 0 12px 16px 0 rgb(152, 100, 165), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.crtbtn {
+  background: rgb(221,165,226);
+  background: linear-gradient(217deg, rgba(221,165,226,1) 13%, rgb(168, 69, 175) 77%, rgba(112,97,113,1) 100%);
+  width: 50px;
+  border-radius: 10px;
+  
+}
+.crtbtns {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  
+}
+.Hz {
+  border-style:outset;
+  height: 30%;
+  border-color: rgb(210, 212, 224);
+  border: 25px;
+  border-radius: 10px;
+  background: rgb(76,207,172);
+background: radial-gradient(circle, rgba(76,207,172,1) 11%, rgba(81,157,179,1) 61%, rgba(198,144,86,1) 97%);
+padding: 5px;  
+}
+.hzLink {
+  height: 150px;
+  
+}
+.crtbtns+ .crtbtns {
+  margin-top: 5px;
+}
+
